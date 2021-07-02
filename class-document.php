@@ -723,7 +723,7 @@ if ( ! class_exists( "cmplz_tc_document" ) ) {
                 return;
 			}
 
-			$title = __("Imprint",'complianz-gdpr');
+			$title = __("Imprint",'complianz-terms-conditions');
 			$status = 'disabled';
 			$page_exists = cmplz_icon('bullet', 'disabled');
 			$sync_icon = cmplz_icon('sync', 'disabled');
@@ -741,9 +741,9 @@ if ( ! class_exists( "cmplz_tc_document" ) ) {
 	            $page_exists = cmplz_icon('bullet', 'success');
 
             } else {
-                $generated = '<a href="'.add_query_arg( array('page'=>'terms-conditions', 'step'=>3),  admin_url('admin.php') ).'">'.__('create', 'complianz-gdpr').'</a>';
+                $generated = '<a href="'.add_query_arg( array('page'=>'terms-conditions', 'step'=>3),  admin_url('admin.php') ).'">'.__('create', 'complianz-terms-conditions').'</a>';
             }
-            $shortcode_icon = cmplz_icon( 'shortcode', $status , __( 'Click to copy the document shortcode', 'complianz-gdpr' ));
+            $shortcode_icon = cmplz_icon( 'shortcode', $status , __( 'Click to copy the document shortcode', 'complianz-terms-conditions' ));
             $shortcode_icon = '<span class="cmplz-copy-shortcode">' . $shortcode_icon . '</span>';
             $args = array(
                 'status' => $status.' shortcode-container',
@@ -761,7 +761,7 @@ if ( ! class_exists( "cmplz_tc_document" ) ) {
 
             $page_id = $this->get_shortcode_page_id('terms-conditions');
             $shortcode = $this->get_shortcode( 'terms-conditions', $force_classic = true );
-            $title = __("Terms and Conditions",'complianz-gdpr');
+            $title = __("Terms and Conditions",'complianz-terms-conditions');
             $title = '<a href="' . get_permalink($page_id) . '">' . $title . '</a>';
             $title .= '<div class="cmplz-selectable cmplz-shortcode" id="terms-conditions">' . $shortcode . '</div>';
 			$page_exists = cmplz_icon('bullet', 'disabled');
@@ -773,9 +773,9 @@ if ( ! class_exists( "cmplz_tc_document" ) ) {
                 $sync_icon = cmplz_icon( 'sync', $status );
                 $page_exists = cmplz_icon('bullet', 'success');
             } else {
-                $generated = '<a href="'.add_query_arg( array('page'=>'terms-conditions', 'step'=>3),  admin_url('admin.php') ).'">'.__('create', 'complianz-gdpr').'</a>';
+                $generated = '<a href="'.add_query_arg( array('page'=>'terms-conditions', 'step'=>3),  admin_url('admin.php') ).'">'.__('create', 'complianz-terms-conditions').'</a>';
             }
-            $shortcode_icon = cmplz_icon( 'shortcode', $status , __( 'Click to copy the document shortcode', 'complianz-gdpr' ));
+            $shortcode_icon = cmplz_icon( 'shortcode', $status , __( 'Click to copy the document shortcode', 'complianz-terms-conditions' ));
             $shortcode_icon = '<span class="cmplz-copy-shortcode">' . $shortcode_icon . '</span>';
 
 			$args = array(
@@ -1296,7 +1296,7 @@ if ( ! class_exists( "cmplz_tc_document" ) ) {
                                 <?php echo $icon ?>
                             </div>
                             <div class="cmplz-shortcode" id="<?php echo $type ?>"><?php echo $shortcode?></div>
-                            <span class="cmplz-copy-shortcode"><?php echo cmplz_tc_icon('shortcode', 'success', __( 'Click to copy the document shortcode', 'complianz-gdpr' ) ); ?></span>
+                            <span class="cmplz-copy-shortcode"><?php echo cmplz_tc_icon('shortcode', 'success', __( 'Click to copy the document shortcode', 'complianz-terms-conditions' ) ); ?></span>
 
 	                        <?php
                         }
