@@ -174,7 +174,9 @@ if ( ! class_exists( "cmplz_tc_admin" ) ) {
 		public function wizard_page() {
 
 			?>
+			<div class="wrap">
 				<?php COMPLIANZ_TC::$wizard->wizard( 'terms-conditions' );  ?>
+			</div>
 			<?php
 		}
 
